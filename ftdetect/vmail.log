@@ -1,0 +1,23 @@
+# Logfile created on 2011-02-26 18:56:15 -0800 by logger.rb/25413
+D, [2011-02-26T18:56:15.972907 #30855] DEBUG -- : #<struct Net::IMAP::TaggedResponse tag="RUBY0001", name="OK", data=#<struct Net::IMAP::ResponseText code=nil, text="asq1186@gmail.com James Loope authenticated (Success)">, raw_data="RUBY0001 OK asq1186@gmail.com James Loope authenticated (Success)\r\n">
+D, [2011-02-26T18:56:15.974380 #30855] DEBUG -- : loading mailboxes...
+D, [2011-02-26T18:56:16.229510 #30855] DEBUG -- : Loaded mailboxes: ["INBOX", "Calendar Invites", "Call log", "Educadium", "Educadium/Automated", "JanRain", "JanRain/Tracebacks", "JanRain/sysadmin", "JanRain/zsupport", "MMS", "Personal", "Receipts", "Resumes", "SMS", "Stolenshoe", "[Gmail]/All Mail", "[Gmail]/Drafts", "[Gmail]/Important", "[Gmail]/Sent Mail", "[Gmail]/Spam", "[Gmail]/Starred", "[Gmail]/Trash", "alerts", "alerts/ylastic"]
+D, [2011-02-26T18:56:16.230139 #30855] DEBUG -- : Setting aliases to {"sent"=>"[Gmail]/Sent Mail", "all"=>"[Gmail]/All Mail", "starred"=>"[Gmail]/Starred", "important"=>"[Gmail]/Important", "drafts"=>"[Gmail]/Drafts", "spam"=>"[Gmail]/Spam", "trash"=>"[Gmail]/Trash"}
+D, [2011-02-26T18:56:16.232708 #30855] DEBUG -- : Selecting mailbox "INBOX"
+D, [2011-02-26T18:56:16.493008 #30855] DEBUG -- : #<struct Net::IMAP::TaggedResponse tag="RUBY0003", name="OK", data=#<struct Net::IMAP::ResponseText code=#<struct Net::IMAP::ResponseCode name="READ-WRITE", data=nil>, text=" INBOX selected. (Success)">, raw_data="RUBY0003 OK [READ-WRITE] INBOX selected. (Success)\r\n">
+D, [2011-02-26T18:56:16.494186 #30855] DEBUG -- : Done
+D, [2011-02-26T18:56:16.494435 #30855] DEBUG -- : Getting mailbox status
+D, [2011-02-26T18:56:16.494654 #30855] DEBUG -- : Getting highest message id
+D, [2011-02-26T18:56:16.750241 #30855] DEBUG -- : HIGHEST ID: 6
+D, [2011-02-26T18:56:17.150764 #30855] DEBUG -- : Setting window width to 177
+D, [2011-02-26T18:56:17.651768 #30855] DEBUG -- : Search query: ["1:6", "all"] > "1:6 all"
+D, [2011-02-26T18:56:17.652129 #30855] DEBUG -- : - @all_search true
+D, [2011-02-26T18:56:17.922758 #30855] DEBUG -- : - search query got 6 results; max seqno: 6
+D, [2011-02-26T18:56:17.923103 #30855] DEBUG -- : CLEARING CACHED MESSAGE
+D, [2011-02-26T18:56:17.923343 #30855] DEBUG -- : Fetch_row_text: [1, 2, 3, 4, 5, 6]
+D, [2011-02-26T18:56:18.402364 #30855] DEBUG -- : - extracting headers
+D, [2011-02-26T18:56:18.410321 #30855] DEBUG -- : - returning 6 new rows and caching result
+D, [2011-02-26T18:56:18.410653 #30855] DEBUG -- : Add_more_message_line for start_seqno 1
+D, [2011-02-26T18:56:18.410893 #30855] DEBUG -- : None remaining
+D, [2011-02-26T18:57:37.113685 #30855] DEBUG -- : Setting window width to 177
+D, [2011-02-26T18:57:38.750939 #30855] DEBUG -- : Closing connection
