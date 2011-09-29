@@ -56,6 +56,9 @@ map <C-l> <C-w>l
 cmap w!! w !sudo tee % >/dev/null
 nnoremap ; :
 
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
 let g:vmail_flagged_color = "ctermfg=red ctermbg=black cterm=bold"
