@@ -25,6 +25,7 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
+autocmd BufWritePre *.rb,*.pp :call <SID>StripTrailingWhitespaces()
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 "change the mapleader from \ to ,
