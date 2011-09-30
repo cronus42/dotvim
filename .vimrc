@@ -12,9 +12,25 @@ if &t_Co > 2 || has("gui_running")
    syntax on
 endif
 
+"function to strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+
 "change the mapleader from \ to ,
 let mapleader=","
 
+"make jj work like escape
 imap jj <Esc>
 filetype on
 filetype plugin on
