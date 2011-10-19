@@ -25,6 +25,8 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
+au BufRead,BufNewFile *.pp set filetype=ruby
+
 autocmd BufWritePre *.rb,*.pp :call <SID>StripTrailingWhitespaces()
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
