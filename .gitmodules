@@ -8,3 +8,9 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/ri_vim"]
+	path = bundle/ri_vim
+	url = https://github.com/danchoi/ri_vim.git
+[submodule "bundle/PA_ruby_ri"]
+	path = bundle/PA_ruby_ri
+	url = https://github.com/vim-scripts/PA_ruby_ri.git
