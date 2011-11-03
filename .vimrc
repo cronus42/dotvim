@@ -64,7 +64,7 @@ set pastetoggle=<F2>
 set tabstop=8
 set shiftwidth=8
 set expandtab
-
+set bg=dark
 
 vmap Q gq
 nmap Q gqap
