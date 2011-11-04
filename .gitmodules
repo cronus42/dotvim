@@ -14,3 +14,6 @@
 [submodule "bundle/PA_ruby_ri"]
 	path = bundle/PA_ruby_ri
 	url = https://github.com/vim-scripts/PA_ruby_ri.git
+[submodule "bundle/threesome.vim"]
+	path = bundle/threesome.vim
+	url = https://github.com/sjl/threesome.vim
