@@ -40,12 +40,12 @@ filetype plugin on
 filetype indent on
 set nocompatible
 set nowrap
-set tabstop=4
+set tabstop=2
 set backspace=indent,eol,start
 set autoindent
 set copyindent
 set number
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 set showmatch
 set ignorecase
@@ -61,8 +61,6 @@ set noerrorbells
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
-set tabstop=8
-set shiftwidth=8
 set expandtab
 set bg=dark
 
@@ -79,5 +77,3 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-
-let g:vmail_flagged_color = "ctermfg=red ctermbg=black cterm=bold"
