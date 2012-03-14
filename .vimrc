@@ -25,10 +25,13 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-au BufRead,BufNewFile *.pp set filetype=ruby
+au BufRead,BufNewFile *.pp set filetype=puppet
 
 autocmd BufWritePre *.rb,*.pp :call <SID>StripTrailingWhitespaces()
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 "change the mapleader from \ to ,
 let mapleader=","
