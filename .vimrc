@@ -26,6 +26,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 au BufRead,BufNewFile *.pp set filetype=puppet
+au BufNewFile,BufRead *.groovy  setf groovy
 
 autocmd BufWritePre *.rb,*.pp :call <SID>StripTrailingWhitespaces()
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
