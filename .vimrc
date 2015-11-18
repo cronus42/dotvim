@@ -80,4 +80,9 @@ nnoremap ; :
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
